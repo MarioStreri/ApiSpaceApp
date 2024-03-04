@@ -1,0 +1,116 @@
+<!-- se utiliza para informar al navegador sobre la versión de HTML que se está utilizando en el documento y cómo debe interpretar el código HTML subsiguiente. -->
+<!DOCTYPE html> 
+<!-- marcar el lenguaje -->
+<html lang="es"> 
+    <head>
+        <!-- reconoce caracteres especiales -->
+        <meta charset="UTF-8">  
+        <!-- El viewport se utiliza para ajustar la página a cualquier dispositivo (ordenador, tablet o móvil) sin necesidad de ajustarlo manualmente -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Barbería Alura</title>
+        <!-- Enlaces a hojas de estilos -->
+        <link rel="stylesheet" href="reset.css/reset.css"> <!-- Reinicio de estilos CSS -->
+        <link rel="stylesheet" href="style.css"> <!-- Estilos personalizados -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Encabezado de la página -->
+        <header>
+            <!-- Contenedor para el logo y el menú de navegación -->
+            <div class="caja">
+                <!-- Logo de la barbería -->
+                <h1><img src="productos/imagenes/logo.png" alt="LogoBarberiaAlura"></h1> <!-- Imagen del logo -->
+                <!-- Menú de navegación -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">home</a></li> <!-- Enlace a la página principal -->
+                        <li><a href="productos.html">productos</a></li> <!-- Enlace a la página de productos -->
+                        <li><a href="contacto.html">contacto</a></li> <!-- Enlace a la página de contacto -->
+                    </ul>
+                </nav>
+            </div> 
+        </header>
+        <!-- Imagen de banner -->
+        <img class="banner" src="banner/banner/banner.jpg" alt="Salón de la barbería">
+        <!-- Sección principal de la página -->
+        <main>
+            <!-- Sección principal -->
+            <section class="principal">
+                <!-- Título principal -->
+                <h2 class="titulo-principal">Sobre la Barbería Alura</h2>
+
+                <!-- Imagen de utensilios -->
+                <img class="utensilios" src="diferenciales/utensilios.jpg" alt="Utensilios de un Barbero.">
+
+                <!-- Párrafos de texto -->
+                <p>
+                    Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> 
+                    trae para el mercado lo mejor para su cabello y barba. Fundada en 2020, 
+                    la Barbería Alura ya es destacada en la ciudad y conquista nuevos clientes diariamente.
+                </p>
+
+                <p id="mision">
+                    <em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em>
+                </p>
+
+                <p>
+                    Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimientos en el mundo de la moda,
+                    para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un patrón de excelencia y agilidad,
+                    garantizando calidad y satisfacción de nuestros clientes.
+                </p>
+            </section>
+
+            <!-- Sección de mapa -->
+            <section class="mapa">
+                <!-- Título del mapa -->
+                <h3 class="titulo-principal">Nuestra Ubicación</h3>
+                <!-- Párrafo de texto -->
+                <p>Nuestro establecimiento está ubicado en el corazón de la ciudad.</p>
+                <!-- Contenedor del mapa -->
+                <div class="mapa-contenido">
+                    <!-- Mapa incrustado de Google Maps -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5170.932201687804!2d-46.637532993888485!3d-23.589939385842346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5bd9bb943bf5%3A0x6f642995c970f0fe!2scaelum%20alura!5e0!3m2!1ses-419!2sar!4v1709491183019!5m2!1ses-419!2sar" 
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            
+            <!-- Sección de diferenciación -->
+            <section class="diferenciales">
+                <!-- Título de diferenciación -->
+                <h3 class="titulo-principal">Diferenciales</h3>
+                <!-- Contenido de diferenciación -->
+                <div class="contenido-diferenciales">
+                    <!-- Lista de diferenciación -->
+                    <ul class="lista-diferenciales">
+                        <li class="items">Atención personalizada a los clientes</li>
+                        <li class="items">Espacio diferenciado</li>
+                        <li class="items">Localización</li>
+                        <li class="items">Profesionales calificados</li>
+                        <li class="items">Puntualidad</li>
+                        <li class="items">Limpieza</li>
+                    </ul>
+                    <!-- Imagen de diferenciación -->
+                    <img src="diferenciales/diferenciales.jpg" class="imagen-diferenciales" alt="Barbero trabajando">
+                </div>  
+                <!-- Video -->
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/vUb02n1NVuQ?si=vzz-P30zH24ktlTO&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div> 
+            </section>
+        </main>
+        <!-- Pie de página -->
+        <footer>
+            <!-- Logo de la barbería en blanco -->
+            <img src="productos/imagenes/logo-blanco.png" alt="Logo Barberia Alura blanco"> <!-- Imagen del logo en blanco -->
+            <!-- Derechos de autor -->
+            <p class="copyright">&copy Copyright Barbería Alura</p> <!-- Derechos de autor -->
+        </footer>
+    </body>
+</html>
+
+
+
+ 

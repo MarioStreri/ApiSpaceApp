@@ -1,0 +1,364 @@
+/* Estilos para el encabezado */
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header {
+    /* Establece el color de fondo del encabezado */
+    background-color: #bbbbbb; /* Utiliza el color gris claro */
+    padding: 20px 0; /* Añade 20 píxeles de relleno arriba y abajo */
+}
+
+/* Estilos para la caja principal */
+.caja {
+    /* Establece el ancho de la caja en 940 píxeles */
+    width: 940px;
+    /* Establece la posición de la caja como relativa al hijo absoluto de nav*/
+    position: relative;
+    /* Centra la caja horizontalmente dentro de su contenedor */
+    margin: 0 auto;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    /* Establece la posición del elemento de navegación como absoluta */
+    position: absolute;
+    /* Ajusta la posición del elemento de navegación 110 píxeles desde arriba */
+    top: 110px;
+    /* Ajusta la posición del elemento de navegación al borde derecho del contenedor */
+    right: 0;
+}
+
+/* Estilos para los elementos de lista dentro de la barra de navegación */
+nav li {
+    /* Por defecto, los elementos de la lista (li) se muestran como bloques. 
+    Esta propiedad cambia la visualización para que se muestren en línea */
+    display: inline-block;
+    
+    /* Margen aplicado a los elementos de la lista.
+    El formato es: arriba - derecha - abajo - izquierda */
+    margin: 0 0 0 15px; /* Margen cero arriba, cero a la derecha, cero abajo, 15px a la izquierda */
+}
+
+/* Estilos para los enlaces dentro de la barra de navegación */
+nav a {
+    /* Convierte el texto en mayúsculas */
+    text-transform: uppercase;
+    
+    /* Establece el color del texto (negro en este caso) */
+    color: #000000;
+    
+    /* Establece el grosor de la fuente en negrita */
+    font-weight: bold;
+    
+    /* Establece el tamaño de la fuente en 22 píxeles */
+    font-size: 22px;
+    
+    /* Elimina la decoración de texto predeterminada (subrayado) en los enlaces */
+    text-decoration: none;
+}
+
+/* Estilos para los enlaces del menú de navegación cuando se coloca el cursor sobre ellos */
+nav a:hover {
+    color: #c78c19; /* Cambia el color del texto del enlace al tono de amarillo */
+    text-decoration: underline; /* Agrega una línea subrayada al texto del enlace */
+}
+
+/* Estilos para el contenedor de productos */
+.productos {
+    width: 940px; /* Ancho del contenedor de productos */
+    margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+    padding: 50px; /* Agrega espacio alrededor del borde del contenedor */
+}
+
+/* Estilos para los elementos de lista dentro del contenedor de productos */
+.productos li {
+    display: inline-block; /* Muestra los elementos en línea y permite establecer dimensiones */
+    text-align: center; /* Centra el contenido dentro de cada elemento */
+    width: 30%; /* Distribuye el 30% de ancho para cada elemento */
+    vertical-align: top; /* Alinea los elementos en la parte superior */
+    margin: 0 1.5%; /* Agrega un pequeño margen horizontal entre los elementos */
+    padding: 30px 20px; /* Agrega relleno alrededor del contenido del elemento */
+    box-sizing: border-box; /* Incluye el relleno y el borde dentro del ancho y alto total del elemento */
+    border: 2px solid #000000 ; 
+    /*esta es una manera reducida de usar las tres propiedades debajo*/
+    /*border-width: 2px; /* Establece el grosor del borde en dos pixeles */
+    /*border-style: solid; /* Establece que el borde será sólido */
+    /*border-color: # 000000; /* Color del borde negro */
+    border-radius : 10px; /* Circunferencia del borde ,puede darle valor a las 4 esquinas */    
+}
+
+/* Estilos para el efecto de hover en los elementos de lista dentro del contenedor de productos */
+.productos li:hover {
+    border-color: #c78c19; /* Cambia el color del borde al pasar el ratón por encima */
+}
+
+/* Estilos para el efecto de activación en los elementos de lista dentro del contenedor de productos */
+.productos li:active {
+    border-color: #088c19; /* Cambia el color del borde al hacer clic en el elemento */
+}
+
+/* Estilos para los encabezados dentro de los elementos de lista */
+.productos h2 {
+    font-size: 30px; /* Tamaño de fuente para los encabezados */
+    font-weight: bold; /* Establece el peso de la fuente en negrita */
+}
+
+/* Estilos para el efecto de hover en los títulos (h2) dentro de los elementos de lista dentro del contenedor de productos */
+.productos li:hover h2 {
+    font-size: 33px; /* Aumenta el tamaño del texto del título al pasar el ratón por encima */
+}
+
+/* Estilos para la descripción de productos */
+.producto-descripcion {
+    font-size: 18px; /* Tamaño de fuente para la descripción */
+}
+
+/* Estilos para los precios de productos */
+.producto-precio {
+    font-size: 20px; /* Tamaño de fuente para los precios */
+    font-weight: bold; /* Establece la fuente en negrita */
+    margin-top: 10px; /* Agrega espacio entre la descripción y el precio */
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center; /* Centra el contenido del pie de página */
+    background: url(productos/imagenes/bg.jpg); /* Establece una imagen de fondo para el pie de página */
+    padding: 40px; /* Agrega espacio alrededor del contenido del pie de página */
+}
+
+/* Estilos para el texto de derechos de autor en el pie de página */
+.copyright {
+    color: #ffffff; /* Establece el color del texto en blanco */
+    font-size: 13px; /* Establece el tamaño de la fuente en 13 píxeles */
+    margin: 20px; /* Agrega espacio exterior alrededor del texto de derechos de autor */
+}
+
+/*Estilos para la pagina contactos*/
+
+/* Estilos para el contenedor con la clase .datos */
+.datos {
+    width: 940px; /* Define el ancho del contenedor principal en 940 píxeles */
+    margin: 0 auto; /* Centra el contenedor en la página horizontalmente */
+}
+
+/* Estilo para el formulario */
+form {
+    margin: 40px 0; /* Establece un margen de 40 píxeles arriba y abajo del formulario */
+    
+}
+
+/* Estilo para etiquetas y párrafos dentro del formulario */
+form label, form legend {
+    display: block; /* Hace que los elementos (etiquetas y párrafos) sean bloques para que cada uno aparezca en una línea nueva */
+    font-size: 20px; /* Define el tamaño de fuente como 20 píxeles */
+    margin: 0 0 10px; /* Establece un margen de 0 en la parte superior e inferior y 10 píxeles en el lado inferior */
+}
+
+/* Estilo para campos de entrada del formulario */
+.input-padron {
+    display: block; /* Hace que los campos de entrada sean bloques para que aparezcan en una línea nueva */
+    margin: 0 0 20px; /* Establece un margen de 0 en la parte superior e inferior y 20 píxeles en el lado inferior */
+    padding: 10px 25px; /* Agrega relleno interno de 10 píxeles arriba y abajo y 25 píxeles a la izquierda y derecha */
+    width: 50%; /* Establece el ancho del campo de entrada al 50% del ancho del contenedor padre */
+}
+
+/* Estilo para el grupo de casillas de verificación */
+.checkbox {
+    margin: 20px 0; /* Establece un margen de 20 píxeles arriba y abajo del grupo de casillas de verificación */
+}
+
+/* Estilo para el botón de envío */
+.enviar {
+    width: 40%; /* Establece el ancho del botón en un 40% del contenedor padre */
+    padding: 15px 0px; /* Añade relleno de 15 píxeles arriba y abajo y 0 píxeles a los lados */
+    font-size: 18px; /* Establece el tamaño de fuente en 18 píxeles */
+    font-weight: bold; /* Establece el grosor de la fuente en negrita */
+    color: white; /* Establece el color del texto en blanco */
+    background: orange; /* Establece el color de fondo del botón en naranja */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Agrega bordes redondeados al botón */
+    transition: 1s all; /* Aplica una transición de 1 segundo a todas las propiedades cuando se cambia */
+}
+
+/* Estilo para el botón de envío al pasar el cursor sobre él */
+.enviar:hover {
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que el botón es interactivo */
+    background: darkorange; /* Cambia el color de fondo del botón a un tono más oscuro de naranja */
+    transform: scale(1.1); /* Escala el tamaño del botón al 110% de su tamaño original */
+}
+
+/* Estilo para las tablas */
+table {
+    margin: 40px; /* Establece un margen de 40 píxeles alrededor de la tabla */
+}
+
+/* Estilo para las filas de encabezado de la tabla */
+thead {
+    background: #555555; /* Establece el color de fondo de las filas de encabezado en gris oscuro */
+    color: white; /* Establece el color del texto en blanco */
+    font-weight: bold; /* Establece el grosor de la fuente en negrita */
+}
+
+/* Estilo para las celdas de datos y encabezados de la tabla */
+td, th {
+    border: 1px solid #000000; /* Establece un borde sólido de 1 píxel de grosor en negro */
+    padding: 8px 15px; /* Añade relleno de 8 píxeles arriba y abajo y 15 píxeles a los lados */
+}
+
+/*estilos para home*/
+
+/* Estilos para el banner */
+.banner {
+    width: 100%; /* Establece el ancho del banner al 100% del contenedor padre */
+}
+
+/* Estilos para el contenedor principal */
+.principal {
+    padding: 3em 0; /* Añade 3 unidades de espacio alrededor del contenido del contenedor */
+    background: #fefefe; /* Establece el color de fondo del contenedor */
+    width: 940px; /* Define el ancho del contenedor principal en 940 píxeles */
+    margin: 0 auto; /* Centra el contenedor en la página horizontalmente */
+}
+
+/* Estilos para el título principal */
+.titulo-principal {
+    text-align: center; /* Centra el texto del título */
+    font-size: 2em; /* Establece el tamaño del texto del título */
+    margin: 0 0 1em; /* Establece el margen inferior del título */
+    clear: left; /* Limpia el flotado anterior */
+}
+
+/* Estilos para los párrafos dentro del contenedor principal */
+.principal p {
+    margin: 0 0 1em; /* Establece el margen inferior de los párrafos */
+}
+
+/* Estilos para el texto en negrita dentro del contenedor principal */
+.principal strong {
+    font-weight: bold; /* Establece el peso de la fuente en negrita */
+}
+
+/* Estilos para el texto en cursiva dentro del contenedor principal */
+.principal em {
+    font-style: italic; /* Establece el estilo de la fuente en cursiva */
+}
+
+/* Estilos para los utensilios */
+.utensilios {
+    width: 120px; /* Define el ancho de los utensilios */
+    float: left; /* Flota los utensilios a la izquierda */
+    margin: 0 20px 20px 0; /* Establece el margen de los utensilios */
+}
+
+/* Estilos para el mapa */
+.mapa {
+    padding: 3em 0; /* Añade 3 unidades de espacio alrededor del contenido del mapa */
+    background: linear-gradient(#fefefe, #888888); /* Establece un degradado de fondo para el mapa */
+}
+
+/* Estilos para los párrafos dentro del mapa */
+.mapa p {
+    padding: 0 0 30px; /* Añade relleno inferior a los párrafos */
+    text-align: center; /* Centra el texto dentro del mapa */
+}
+
+/* Estilos para el contenido del mapa */
+.mapa-contenido {
+    width: 940px; /* Define el ancho del contenido del mapa en 940 píxeles */
+    margin: 0 auto; /* Centra el contenido del mapa en la página horizontalmente */
+}
+
+/* Estilos para los diferenciales */
+.diferenciales {
+    padding: 3em 0; /* Añade 3 unidades de espacio alrededor del contenido de los diferenciales */
+    background: #888888; /* Establece el color de fondo de los diferenciales */
+}
+
+/* Estilos para el contenido de los diferenciales */
+.contenido-diferenciales {
+    width: 640px; /* Define el ancho del contenido de los diferenciales en 640 píxeles */
+    margin: 0 auto; /* Centra el contenido de los diferenciales en la página horizontalmente */
+}
+
+/* Estilos para la lista de diferenciales */
+.lista-diferenciales {
+    width: 40%; /* Define el ancho de la lista de diferenciales */
+    display: inline-block; /* Muestra la lista de diferenciales en línea */
+    vertical-align: top; /* Alinea la lista de diferenciales en la parte superior */
+}
+
+/* Estilos para los elementos de la lista de diferenciales */
+.items {
+    line-height: 1.5; /* Establece la altura de línea para los elementos de la lista */
+}
+
+/* Estilos para el icono de los elementos de la lista de diferenciales */
+.items::before {
+    content: "🟊"; /* Añade un icono antes de cada elemento de la lista */
+}
+
+/* Estilos para el primer elemento de la lista de diferenciales */
+.items:first-child {
+    font-weight: bold; /* Establece el peso de la fuente del primer elemento de la lista en negrita */
+}
+
+/* Estilos para la imagen de los diferenciales */
+.imagen-diferenciales {
+    width: 60%; /* Define el ancho de la imagen de los diferenciales */
+    transition: 400ms; /* Aplica una transición suave de 400 milisegundos */
+    box-shadow: 10px 10px 30px 15px #000000; /* Añade una sombra a la imagen de los diferenciales */
+} 
+
+/* Estilos para la imagen de los diferenciales al pasar el cursor sobre ella */
+.imagen-diferenciales:hover {
+    opacity: 0.3; /* Reduce la opacidad de la imagen de los diferenciales al pasar el cursor sobre ella */
+}
+
+/* Estilos para el vídeo */
+.video {
+    width: 560px; /* Define el ancho del vídeo en 560 píxeles */
+    margin: 1em auto; /* Establece el margen del vídeo */
+}
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+    body {
+        border: 10px solid transparent; /* Añade un borde de 10 píxeles transparente al cuerpo */
+    }
+    h1 {
+        text-align: center; /* Centra el texto del encabezado h1 */
+    }
+    header .caja {
+        display: flex; /* Utiliza flexbox para el contenedor del encabezado */
+        flex-direction: column; /* Cambia la dirección de los elementos del contenedor a columnas */
+        align-items: center; /* Centra verticalmente los elementos */
+    }
+    nav {
+        max-width: 100%; /* Ajusta el ancho máximo del menú */
+        display: flex; /* Utiliza flexbox para el menú */
+        justify-content: center; /* Centra los elementos horizontalmente */
+        margin-top: 120px; /* Agrega margen superior al menú */
+    }
+    nav ul {
+        padding: 0; /* Elimina el relleno de la lista */
+        margin: 0; /* Elimina el margen de la lista */
+        display: flex; /* Utiliza flexbox para la lista */
+        justify-content: center; /* Centra los elementos horizontalmente */
+    }
+    nav li {
+        margin: 0 10px; /* Ajusta el margen entre elementos del menú */
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+        width: auto; /* Define el ancho automático para estos elementos */
+    }
+    .lista-diferenciales, .imagen-diferenciales {
+        width: 100%; /* Define el ancho al 100% para estos elementos */
+    }
+}
+
+
