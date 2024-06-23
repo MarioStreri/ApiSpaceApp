@@ -21,7 +21,7 @@ function App() {
         <Route path='posts/:id' element= {<Post />}/>
         <Route path='/categoria/:id/*' element= {<Categoria />}/>
         <Route path='*' element = {<Page404 />} /> 
-      </Routes>
+      </Routes>  
     </Router>
   );
 }
